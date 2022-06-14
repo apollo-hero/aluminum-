@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    --> 
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <!-- page wrapper  -->
+
+    <div class="wrapper">
+
+        <!-- left sidebar  -->
+        <div class="sidebar">
+            <!-- sidebar logo  -->
+            <div class="sidebar-logo">
+                <img src="assets/images/logo.png" alt="logo"/>
+            </div>
+            <!-- sidebar logo ends  -->
+
+            <!-- sidebar menu and profile section -->
+            <div class="sidebar-menu-section after-logo">
+
+                <!-- sidebar profile  -->
+                <div class="sidebar-profile">
+                    <div class="sidebar-profile-avatar">
+                        <img src="assets/images/sidebar-profile-avatar.png" alt="sidebar profile picture">
+                    </div>
+                    <div class="sidebar-profile-info">
+                        <span class="sidebar-profile-info-name">Staff mem</span>
+                        <span class="sidebar-profile-info-id">user01</span>
+                    </div>
+                </div>
+                <!-- sidebar profile ends  -->
+
+
+                <!-- sidebar menu section  -->
+                <div class="sidebar-menu">
+                    <ul class="sidebar-menu-list">
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <span>
+                                    <img src="assets/images/dashboard.svg" alt="dashboard" />
+                                </span>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-menu-item active">
+                            <a href="#">
+                                <span>
+                                    <img src="assets/images/jobs.svg" alt="jobs">
+                                </span>
+                                <span>Jobs</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <span>
+                                    <img src="assets/images/reports.svg" alt="reports">
+                                </span>
+                                <span>Reports</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <span>
+                                  <img src="assets/images/users.svg" alt="users">
+                                </span>
+                                <span>Users</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <span>
+                                    <img src="assets/images/dail-tasks.svg" alt="dail tasks">
+                                </span>
+                                <span>Daily Tank Adjustments</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar menu section ends  -->
+               
+
+
+            </div>
+            <!-- sidebar menu and profile section ends-->
+            <div class="menu-separator mt-4"></div>
+            <!-- sidebar menu and profile section-->
+            <div class="sidebar-menu-section mt-0 pt-0">
+                <!-- sidebar menu section  -->
+                <div class="sidebar-menu mt-3">
+                    <ul class="sidebar-menu-list">
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <span>
+                                    <img src="assets/images/settings.svg" alt="Settings">
+                                </span>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- sidebar menu and profile section ends-->
+
+
+             <!-- sidebar menu bottom-->
+            <div class="sidebar-menu-bottom-section">
+                <!-- sidebar menu section  -->
+                <div class="sidebar-menu">
+                    <ul class="sidebar-menu-list">
+                        <li class="sidebar-menu-item bottom">
+                            <a href="javascript:void(0)" id="sidebar-toggle-button">
+                                <span>
+                                    <img src="assets/images/toggle-sidebar.svg" alt="toggle-sidebar">
+                                </span>
+                                <span>Toggle sidebar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- sidebar menu and profile section ends-->
+
+
+        </div>
+        <!-- left sidebar ends  -->
+
+        <!-- main content starts  -->
+        <div class="main-content">
+
+            <!-- top-bar  -->
+            <div class="top-bar">
+                <div class="top-bar-left-items">
+                    <button class="button button-transparent d-inline">
+                        <img src="assets/images/icon-add.svg" alt="add icon">
+                        <span>Add new job</span>
+                    </button>
+                    <div class="d-inline">
+                        <img src="assets/images/icon-search.svg" alt="search icon">
+                        <input type="text" class="input input-transparent" placeholder="Search for item" autocomplete="off"/>
+                    </div>
+                </div>
+                <div class="top-bar-right-items">
+                    <button class="button button-notification float-right"><img src="assets/images/notification.svg" alt="notification icon">
+                        
+                        <!-- notification dropdown  -->
+                        <div class="notification-dropdown">  
+                            <div class="notification-title">
+                                You have 3 new notifications
+                            </div>
+                            <!-- notification item  -->
+                                <div class="notifi__item">
+                                    <div class="img-cir">
+                                        <img src="assets/images/notification-only.svg">
+                                    </div>
+                                    <div class="content">
+                                        <p>You got a email notification</p>
+                                        <span class="date">April 12, 2018 06:50</span>
+                                    </div>
+                                </div>
+                            <!-- notification item ends  -->
+
+                            <div class="notifi__item">
+                                <div class="img-cir">
+                                        <img src="assets/images/notification-only.svg">
+                                </div>
+                                <div class="content">
+                                    <p>You got a new file</p>
+                                    <span class="date">April 12, 2018 06:50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- notification dropdown ends  -->
+                    </button>
+                </div>
+            </div>
+            <!-- topbar ends  -->
+
+
+            <!-- main content body  -->
+            <div class="content-container">
+                
+                <!-- page title  -->
+                <div class="page-title">
+                    <div class="title-left">
+                        <h3 class="page-title-heading">JOB Number : 2141251244214214124</h3>
+                    </div>
+                    <div class="title-right">
+                        <ul class="custom-title-progress">
+                            <li></li>
+                            <li></li>
+                            <li  class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- page title ends  -->
+
+                
+                <div class="row mt-5">
+
+                   <div class="col-md-12">
+                        <div class="cust-card">
+                            <div class="cust-card-header">
+                                Drier
+                            </div>
+                            <div class="cust-card-body p-0">
+                                
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="list-group">
+                                             <li class="list-group-item p-3 min-height-80px">
+                                                <div class="row d-flex align-items-center">
+                                                    <div class="col-2">
+                                                        <span class="text text-default cust-label-text cust-label-text-medium">
+                                                            
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-10">
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="list-group-item p-3 min-height-80px">
+                                                <div class="row d-flex align-items-center">
+                                                    <div class="col-2">
+                                                        <span class="text text-default cust-label-text cust-label-text-medium">
+                                                            
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-10">
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                             <li class="list-group-item p-3 min-height-80px">
+                                                <div class="row d-flex align-items-center">
+                                                    <div class="col-2">
+                                                        <span class="text text-default cust-label-text cust-label-text-medium">
+                                                            
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-10">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                             <li class="list-group-item p-3 min-height-80px">
+                                                <div class="row d-flex align-items-center">
+                                                    <div class="col-2">
+                                                        <span class="text text-default cust-label-text cust-label-text-medium">
+                                                            
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-10">
+
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="list-group-item p-3 min-height-120px">
+                                                <div class="row d-flex align-items-center">
+                                                    <div class="col-2">
+                                                        <span class="text text-default cust-label-text cust-label-text-medium">
+                                                            
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-10">
+
+                                                    </div>
+                                                </div>
+                                            </li>
+                                          
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="col-12">
+                        <div class="cust-card-footer">
+                            <div>
+                                <button class="button button-purple w-auto px-5 d-inline-block">back to job screen</button>
+                                <span class="text text-default cust-label-text cust-label-text-normal ml-4">time stamp: 00:00PM 20 DEC 2022</span>
+                            </div>
+                            <div>
+                                <button class="button button-green w-auto px-5 d-inline-block">Submit & Next</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+               
+
+            </div>
+            <!-- main content body ends  -->
+
+
+        </div>
+        <!-- main content ends  -->
+
+
+
+    </div>
+    <!-- page wrapper ends  -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
