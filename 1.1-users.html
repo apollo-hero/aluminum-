@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    --> 
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <!-- page wrapper  -->
+
+    <div class="wrapper">
+
+        <!-- left sidebar  -->
+        <div class="sidebar">
+            <!-- sidebar logo  -->
+            <div class="sidebar-logo">
+                <img src="assets/images/logo.png" alt="logo"/>
+            </div>
+            <!-- sidebar logo ends  -->
+
+            <!-- sidebar menu and profile section -->
+            <div class="sidebar-menu-section after-logo">
+
+                <!-- sidebar profile  -->
+                <div class="sidebar-profile">
+                    <div class="sidebar-profile-avatar">
+                        <img src="assets/images/sidebar-profile-avatar.png" alt="sidebar profile picture">
+                    </div>
+                    <div class="sidebar-profile-info">
+                        <span class="sidebar-profile-info-name">Staff mem</span>
+                        <span class="sidebar-profile-info-id">user01</span>
+                    </div>
+                </div>
+                <!-- sidebar profile ends  -->
+
+
+                <!-- sidebar menu section  -->
+                <div class="sidebar-menu">
+                    <ul class="sidebar-menu-list">
+                        <li class="sidebar-menu-item active">
+                            <a href="#">
+                                <span>
+                                    <img src="assets/images/dashboard.svg" alt="dashboard" />
+                                </span>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <span>
+                                    <img src="assets/images/jobs.svg" alt="jobs">
+                                </span>
+                                <span>Jobs</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <span>
+                                    <img src="assets/images/reports.svg" alt="reports">
+                                </span>
+                                <span>Reports</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <span>
+                                  <img src="assets/images/users.svg" alt="users">
+                                </span>
+                                <span>Users</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <span>
+                                    <img src="assets/images/dail-tasks.svg" alt="dail tasks">
+                                </span>
+                                <span>Daily Tank Adjustments</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar menu section ends  -->
+               
+
+
+            </div>
+            <!-- sidebar menu and profile section ends-->
+            <div class="menu-separator mt-4"></div>
+            <!-- sidebar menu and profile section-->
+            <div class="sidebar-menu-section mt-0 pt-0">
+                <!-- sidebar menu section  -->
+                <div class="sidebar-menu mt-3">
+                    <ul class="sidebar-menu-list">
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <span>
+                                    <img src="assets/images/settings.svg" alt="Settings">
+                                </span>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- sidebar menu and profile section ends-->
+
+
+             <!-- sidebar menu bottom-->
+            <div class="sidebar-menu-bottom-section">
+                <!-- sidebar menu section  -->
+                <div class="sidebar-menu">
+                    <ul class="sidebar-menu-list">
+                        <li class="sidebar-menu-item bottom">
+                            <a href="javascript:void(0)" id="sidebar-toggle-button">
+                                <span>
+                                    <img src="assets/images/toggle-sidebar.svg" alt="toggle-sidebar">
+                                </span>
+                                <span>Toggle sidebar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- sidebar menu and profile section ends-->
+
+
+        </div>
+        <!-- left sidebar ends  -->
+
+        <!-- main content starts  -->
+        <div class="main-content">
+
+            <!-- top-bar  -->
+            <div class="top-bar">
+                <div class="top-bar-left-items">
+                    <button class="button button-transparent d-inline">
+                        <img src="assets/images/icon-add.svg" alt="add icon">
+                        <span>Add new job</span>
+                    </button>
+                    <div class="d-inline">
+                        <img src="assets/images/icon-search.svg" alt="search icon">
+                        <input type="text" class="input input-transparent" placeholder="Search for item" autocomplete="off"/>
+                    </div>
+                </div>
+                <div class="top-bar-right-items">
+                    <button class="button button-notification float-right"><img src="assets/images/notification.svg" alt="notification icon">
+                        
+                        <!-- notification dropdown  -->
+                        <div class="notification-dropdown">  
+                            <div class="notification-title">
+                                You have 3 new notifications
+                            </div>
+                            <!-- notification item  -->
+                                <div class="notifi__item">
+                                    <div class="img-cir">
+                                        <img src="assets/images/notification-only.svg">
+                                    </div>
+                                    <div class="content">
+                                        <p>You got a email notification</p>
+                                        <span class="date">April 12, 2018 06:50</span>
+                                    </div>
+                                </div>
+                            <!-- notification item ends  -->
+
+                            <div class="notifi__item">
+                                <div class="img-cir">
+                                        <img src="assets/images/notification-only.svg">
+                                </div>
+                                <div class="content">
+                                    <p>You got a new file</p>
+                                    <span class="date">April 12, 2018 06:50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- notification dropdown ends  -->
+                    </button>
+                </div>
+            </div>
+            <!-- topbar ends  -->
+
+
+            <!-- main content body  -->
+            <div class="content-container">
+                
+                <!-- page title  -->
+                <div class="page-title">
+                    <div class="title-left">
+                        <h3 class="page-title-heading page-title-heading-large">Users List</h3>
+                    </div>
+                    <div class="title-right"></div>
+                </div>
+                <!-- page title ends  -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive table-responsive-data2">
+                            <table class="table table-data2 table-tr-space">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            
+                                        </th>
+                                        <th>Name</th>
+                                        <th>Online / Last Online</th>
+                                        <th>Phone</th>
+                                        <th></th>
+                                        <th>Total Jobs</th>
+                                        <th>Misc.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="tr-shadow">
+                                        <td>
+                                            <div class="user-avatar user-avatar-extra-small">
+                                                <img class="rounded-circle" alt="100x100" src="assets/images/users-list-table-avatar.png">
+                                            </div>
+                                        </td>
+                                        <td>Deane Staff Member</td>
+                                        <td>
+                                            <span class="user-status user-status-online"></span> Right Now
+                                        </td>
+                                        <td>0858125125</td>
+                                        <td>21</td>
+                                        <td>
+                                            231
+                                        </td>
+                                        
+                                        <td>
+                                            <button class="button button-blue d-inline w-auto py-1">Report</button>
+                                            <button class="button button-blue d-inline w-auto py-1">View Details</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="spacer"></tr>
+                                     <tr class="tr-shadow">
+                                        <td>
+                                            <div class="user-avatar user-avatar-extra-small">
+                                                <img class="rounded-circle" alt="100x100" src="assets/images/users-list-table-avatar.png">
+                                            </div>
+                                        </td>
+                                        <td>Deane Staff Member</td>
+                                        <td>
+                                            <span class="user-status user-status-offline"></span> 20 mins ago
+                                        </td>
+                                        <td>0858125125</td>
+                                        <td>21</td>
+                                        <td>
+                                            231
+                                        </td>
+                                        
+                                        <td>
+                                            <button class="button button-blue d-inline w-auto py-1">Report</button>
+                                            <button class="button button-blue d-inline w-auto py-1">View Details</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="spacer"></tr>
+                                     <tr class="tr-shadow">
+                                        <td>
+                                            <div class="user-avatar user-avatar-extra-small">
+                                                <img class="rounded-circle" alt="100x100" src="assets/images/users-list-table-avatar.png">
+                                            </div>
+                                        </td>
+                                        <td>Deane Staff Member</td>
+                                        <td>
+                                            <span class="user-status user-status-offline"></span> 1hr 20 mins ago
+                                        </td>
+                                        <td>0858125125</td>
+                                        <td>21</td>
+                                        <td>
+                                            231
+                                        </td>
+                                        
+                                        <td>
+                                            <button class="button button-blue d-inline w-auto py-1">Report</button>
+                                            <button class="button button-blue d-inline w-auto py-1">View Details</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="spacer"></tr>
+                                     <tr class="tr-shadow">
+                                        <td>
+                                            <div class="user-avatar user-avatar-extra-small">
+                                                <img class="rounded-circle" alt="100x100" src="assets/images/users-list-table-avatar.png">
+                                            </div>
+                                        </td>
+                                        <td>Deane Staff Member</td>
+                                        <td>
+                                            <span class="user-status user-status-online"></span> Right Now
+                                        </td>
+                                        <td>0858125125</td>
+                                        <td>21</td>
+                                        <td>
+                                            231
+                                        </td>
+                                        
+                                        <td>
+                                            <button class="button button-blue d-inline w-auto py-1">Report</button>
+                                            <button class="button button-blue d-inline w-auto py-1">View Details</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- main content body ends  -->
+
+
+        </div>
+        <!-- main content ends  -->
+
+
+
+    </div>
+    <!-- page wrapper ends  -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
